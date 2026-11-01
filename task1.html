@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Library Website</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #263b50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        h2 {
+            color: #263b50;
+            text-align: center;
+        }
+
+        .search {
+            text-align: center;
+            margin: 20px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* CSS GRID */
+
+        .book-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .book {
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        .book img {
+            width: 120px;
+            height: 160px;
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .unavailable {
+            color: red;
+            font-weight: bold;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+
+        .rules {
+            background-color: white;
+            margin: 25px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #263b50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>MY LIBRARY</h1>
+        <p>Welcome to Our Digital Library</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#catalog">Book Catalog</a>
+        <a href="#rules">Library Rules</a>
+    </nav>
+
+    <h2 id="home">Search Books</h2>
+
+    <div class="search">
+        <input type="text" placeholder="Search book name...">
+
+        <select>
+            <option>All Categories</option>
+            <option>Science</option>
+            <option>Technology</option>
+            <option>Fiction</option>
+        </select>
+
+        <select>
+            <option>All Books</option>
+            <option>Available</option>
+            <option>Not Available</option>
+        </select>
+
+        <button>Search</button>
+    </div>
+
+    <h2 id="categories">Book Categories</h2>
+
+    <div class="book-container">
+
+        <div class="book">
+            <img src="https://covers.openlibrary.org/b/isbn/9780131103627-M.jpg">
+            <h3>The C Programming Language</h3>
+            <p>Author: Brian Kernighan</p>
+            <p>Category: Technology</p>
+            <p class="available">Available</p>
+        </div>
+
+        <div class="book">
+            <img src="https://covers.openlibrary.org/b/isbn/9780743273565-M.jpg">
+            <h3>The Great Gatsby</h3>
+            <p>Author: F. Scott Fitzgerald</p>
+            <p>Category: Fiction</p>
+            <p class="unavailable">Not Available</p>
+        </div>
+
+        <div class="book">
+            <img src="https://covers.openlibrary.org/b/isbn/9780061120084-M.jpg">
+            <h3>To Kill a Mockingbird</h3>
+            <p>Author: Harper Lee</p>
+            <p>Category: Fiction</p>
+            <p class="available">Available</p>
+        </div>
+
+    </div>
+
+    <h2 id="catalog">Book Catalog</h2>
+
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Availability</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>C Programming</td>
+            <td>Brian Kernighan</td>
+            <td>Technology</td>
+            <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>The Great Gatsby</td>
+            <td>F. Scott Fitzgerald</td>
+            <td>Fiction</td>
+            <td>Not Available</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>To Kill a Mockingbird</td>
+            <td>Harper Lee</td>
+            <td>Fiction</td>
+            <td>Available</td>
+        </tr>
+    </table>
+
+    <h2 id="rules">Library Rules</h2>
+
+    <div class="rules">
+        <ol>
+            <li>Maintain silence inside the library.</li>
+            <li>Return books on or before the due date.</li>
+            <li>Do not damage library books.</li>
+            <li>Keep the library clean.</li>
+            <li>Carry your library ID card.</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>© 2026 My Library Website</p>
+        <p>Read More Books, Gain More Knowledge!</p>
+    </footer>
+
+</body>
+</html>
