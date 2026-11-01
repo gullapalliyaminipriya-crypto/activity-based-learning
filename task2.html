@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Care Hospital</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f8fa;
+        }
+
+        header {
+            background-color: #087e8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #075763;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #087e8b;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Departments and Doctors */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        .card h3 {
+            color: #087e8b;
+        }
+
+        /* Appointment Form */
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #087e8b;
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .contact {
+            background-color: #d8f3f5;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #075763;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>CITY CARE HOSPITAL</h1>
+        <p>Your Health Is Our Priority</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#departments">Departments</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#appointment">Appointment</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+
+    <div class="container" id="home">
+        <h2>Welcome to City Care Hospital</h2>
+        <p style="text-align:center;">
+            We provide quality healthcare services with
+            experienced doctors and modern facilities.
+        </p>
+    </div>
+
+    <!-- Departments -->
+
+    <div class="container" id="departments">
+        <h2>Our Departments</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Cardiology</h3>
+                <p>Heart care and treatment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Neurology</h3>
+                <p>Brain and nervous system care.</p>
+            </div>
+
+            <div class="card">
+                <h3>Orthopedics</h3>
+                <p>Bone and joint treatment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pediatrics</h3>
+                <p>Healthcare for children.</p>
+            </div>
+
+            <div class="card">
+                <h3>Dermatology</h3>
+                <p>Skin care and treatment.</p>
+            </div>
+
+            <div class="card">
+                <h3>General Medicine</h3>
+                <p>General health checkups.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Doctors -->
+
+    <div class="container" id="doctors">
+        <h2>Our Doctors</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Dr. Ravi Kumar</h3>
+                <p>Specialty: Cardiologist</p>
+                <p>Experience: 10 Years</p>
+            </div>
+
+            <div class="card">
+                <h3>Dr. Priya Sharma</h3>
+                <p>Specialty: Neurologist</p>
+                <p>Experience: 8 Years</p>
+            </div>
+
+            <div class="card">
+                <h3>Dr. Anil Reddy</h3>
+                <p>Specialty: Orthopedic</p>
+                <p>Experience: 12 Years</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Facilities -->
+
+    <div class="container" id="facilities">
+        <h2>Hospital Facilities</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>24/7 Emergency</h3>
+                <p>Emergency medical services.</p>
+            </div>
+
+            <div class="card">
+                <h3>ICU</h3>
+                <p>Intensive care facilities.</p>
+            </div>
+
+            <div class="card">
+                <h3>Laboratory</h3>
+                <p>Advanced medical testing.</p>
+            </div>
+
+            <div class="card">
+                <h3>Pharmacy</h3>
+                <p>Medicine availability.</p>
+            </div>
+
+            <div class="card">
+                <h3>Ambulance</h3>
+                <p>Emergency transportation.</p>
+            </div>
+
+            <div class="card">
+                <h3>X-Ray</h3>
+                <p>Medical imaging services.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Visiting Hours -->
+
+    <div class="container">
+        <h2>Visiting Hours</h2>
+
+        <div class="card">
+            <p>Morning: 10:00 AM - 12:00 PM</p>
+            <p>Evening: 4:00 PM - 7:00 PM</p>
+            <p>Sunday: 10:00 AM - 12:00 PM</p>
+        </div>
+    </div>
+
+    <!-- Appointment Form -->
+
+    <div class="container" id="appointment">
+        <h2>Book an Appointment</h2>
+
+        <form>
+
+            <label for="name">Patient Name:</label>
+            <input type="text" id="name"
+            name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"
+            name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone"
+            name="phone" required>
+
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Choose Department</option>
+                <option>Cardiology</option>
+                <option>Neurology</option>
+                <option>Orthopedics</option>
+                <option>Pediatrics</option>
+                <option>Dermatology</option>
+                <option>General Medicine</option>
+            </select>
+
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date"
+            name="date" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"
+            rows="4"></textarea>
+
+            <button type="submit">Submit Appointment</button>
+
+        </form>
+    </div>
+
+    <!-- Emergency Contact -->
+
+    <div class="contact" id="contact">
+        <h2>Emergency Contact</h2>
+
+        <h3>Emergency Number: 108</h3>
+        <p>Hospital Contact: 9876543210</p>
+        <p>Email: citycare@gmail.com</p>
+        <h3>Emergency Services Available 24/7</h3>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>© 2026 City Care Hospital</p>
+        <p>Healthy Life, Happy Life!</p>
+    </footer>
+
+</body>
+</html>
