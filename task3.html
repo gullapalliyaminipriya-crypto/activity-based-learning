@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie World</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #191919;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e63946;
+        }
+
+        .search {
+            text-align: center;
+            margin: 20px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Movie Grid */
+
+        .movie-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .movie-card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .movie-card h3 {
+            color: #e63946;
+        }
+
+        .rating {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .review {
+            background-color: #eeeeee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        footer {
+            background-color: #191919;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width: 600px) {
+            .movie-container {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 900px) {
+            .movie-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>MOVIE WORLD</h1>
+        <p>Discover Your Favourite Movies</p>
+    </header>
+
+    <!-- Navigation -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#details">Movie Details</a>
+    </nav>
+
+    <!-- Home -->
+
+    <div id="home">
+        <h2>Welcome to Movie World</h2>
+        <p style="text-align:center;">
+            Explore movies, discover stories and enjoy entertainment.
+        </p>
+    </div>
+
+    <!-- Search -->
+
+    <div class="search">
+        <input type="text" placeholder="Search movies...">
+
+        <select>
+            <option>All Genres</option>
+            <option>Action</option>
+            <option>Comedy</option>
+            <option>Drama</option>
+            <option>Science Fiction</option>
+        </select>
+
+        <button>Search</button>
+    </div>
+
+    <!-- Movies -->
+
+    <h2 id="movies">Popular Movies</h2>
+
+    <div class="movie-container">
+
+        <!-- Movie 1 -->
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg">
+
+            <h3>Oppenheimer</h3>
+
+            <p><b>Genre:</b> Drama / History</p>
+
+            <p><b>Release:</b> 2023</p>
+
+            <p><b>Cast:</b> Cillian Murphy, Emily Blunt</p>
+
+            <p><b>Synopsis:</b> A scientist works on the development of the atomic bomb.</p>
+
+            <p class="rating">Rating: ★★★★★ 8.3/10</p>
+
+            <div class="review">
+                <b>Critic Review:</b>
+                <p>A powerful historical drama with excellent performances.</p>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg">
+
+            <h3>Interstellar</h3>
+
+            <p><b>Genre:</b> Science Fiction</p>
+
+            <p><b>Release:</b> 2014</p>
+
+            <p><b>Cast:</b> Matthew McConaughey, Anne Hathaway</p>
+
+            <p><b>Synopsis:</b> A group of astronauts travels through space to find a new home for humanity.</p>
+
+            <p class="rating">Rating: ★★★★★ 8.7/10</p>
+
+            <div class="review">
+                <b>Critic Review:</b>
+                <p>An amazing science fiction movie with a beautiful story.</p>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+
+        <div class="movie-card">
+            <img src="https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg">
+
+            <h3>The Shawshank Redemption</h3>
+
+            <p><b>Genre:</b> Drama</p>
+
+            <p><b>Release:</b> 1994</p>
+
+            <p><b>Cast:</b> Tim Robbins, Morgan Freeman</p>
+
+            <p><b>Synopsis:</b> A story about friendship, hope and life inside a prison.</p>
+
+            <p class="rating">Rating: ★★★★★ 9.3/10</p>
+
+            <div class="review">
+                <b>Critic Review:</b>
+                <p>A memorable story about hope and friendship.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Movie Details Table -->
+
+    <h2 id="details">Movie Details</h2>
+
+    <table>
+
+        <tr>
+            <th>Movie Name</th>
+            <th>Genre</th>
+            <th>Release Year</th>
+            <th>Rating</th>
+        </tr>
+
+        <tr>
+            <td>Oppenheimer</td>
+            <td>Drama</td>
+            <td>2023</td>
+            <td>8.3/10</td>
+        </tr>
+
+        <tr>
+            <td>Interstellar</td>
+            <td>Science Fiction</td>
+            <td>2014</td>
+            <td>8.7/10</td>
+        </tr>
+
+        <tr>
+            <td>The Shawshank Redemption</td>
+            <td>Drama</td>
+            <td>1994</td>
+            <td>9.3/10</td>
+        </tr>
+
+    </table>
+
+    <!-- Reviews -->
+
+    <h2 id="reviews">Movie Reviews</h2>
+
+    <div class="movie-container">
+
+        <div class="movie-card">
+            <h3>Oppenheimer</h3>
+            <p class="rating">★★★★☆</p>
+            <p>Excellent acting and direction.</p>
+        </div>
+
+        <div class="movie-card">
+            <h3>Interstellar</h3>
+            <p class="rating">★★★★★</p>
+            <p>Beautiful visuals and emotional story.</p>
+        </div>
+
+        <div class="movie-card">
+            <h3>Shawshank Redemption</h3>
+            <p class="rating">★★★★★</p>
+            <p>An inspiring and unforgettable movie.</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <h3>Movie World</h3>
+        <p>Enjoy Movies and Entertainment!</p>
+        <p>© 2026 Movie World</p>
+    </footer>
+
+</body>
+</html>
